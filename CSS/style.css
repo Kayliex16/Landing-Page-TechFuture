@@ -60,6 +60,13 @@ section {
     margin: 1rem 0;
 }
 
+.subtitle {
+    color: var(--light-gray);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
 .btn {
     color: var(--light-white);
     background: var(---light-dark-blue);
@@ -260,44 +267,92 @@ section {
 
 .services {
     width: 100vw;
-    text-align: center;
-  
 }
 
 .services .row {
     margin: 2rem 0;
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .services .row .image img {
-    width: 50vw;
-    height: 55vh;
+    width: 40vw;
+    height: 45vh;
 }
 
 .services .row .content {
     text-align: left;
 }
 
-.service .row .content h3 {
+.services .row .content h3 {
     color: var(--light-dark-gray);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
 }
 
-.service .row .content p {
+.services .row .content p {
     color: var(--light-gray);
     font-size: 1.5rem;
-    font-weight: 600;
     padding: 1rem 0;
+}
+
+.services .row .content:nth-child(even){
+    border-radius: var(--border-radius);
+    background: var(--light-blue-bg);
+    padding: 2rem 1.5rem;
 }
 
 /*services section ends*/
 
+/*reviews section starts*/
 
+.reviews .box-container {
+   display: flex;
+   flex-wrap: wrap;     
+   gap: 1.5rem;  
+}
 
+.reviews .box-container .box{
+    width: 13rem;
+    padding: 2rem;
+    flex:  1 1 20rem;
+    margin-bottom: 4rem;
+    border-radius: var(--border-radius);
+    background: var(--light-blue-bg);
+}
 
+.reviews .box-container .box h3{
+    color: var(--light-dark-gray);
+    font-size: 2rem;
+}
+
+.reviews .box-container .box p {
+    color: var(--light-gray);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.reviews .box-container .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.reviews .box-container .user img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.reviews .box-container .stars i {
+    color: #FFD233;
+    font-size: 1.2rem;
+}
+/*reviews section ends*/
 
 /*media queries*/
 
@@ -371,6 +426,22 @@ section {
     
     .about .content p {
         font-size: 1.3rem;
+    }
+
+    .services .row .content h3{
+        font-size: 2rem;
+    }
+
+    .services .row{
+        flex-flow: column;
+    }
+
+    .services .row:nth-child(even) {
+       flex-flow: column-reverse;
+    }
+
+    .services .row .content .image img {
+        width: 100%;
     }
     
 
