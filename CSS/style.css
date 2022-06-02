@@ -354,6 +354,51 @@ section {
 }
 /*reviews section ends*/
 
+/*contact section starts*/
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact .row .image {
+    flex:  1 1 45rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    width: 100%;
+    padding: 2rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: var(--border-radius);
+}
+
+.contact .row form .box {
+    margin: .7rem 0;
+    width: 100%;
+    color: var(--light-gray);
+    font-size: 1.7rem;
+    padding: 1rem;
+    background: #f7f7f7;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: var(--border-radius);
+    text-transform: none;
+}
+
+.contact .row form .box:focus{
+   background: var(--light-blue-bg);
+}
+
+
+
+/*contact section ends*/
+
 /*media queries*/
 
 @media(max-width: 991px){
