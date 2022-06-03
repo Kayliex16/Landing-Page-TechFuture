@@ -395,6 +395,61 @@ section {
    background: var(--light-blue-bg);
 }
 
+/*contact section ends*/
+
+/*footer section starts*/
+
+.footer {
+    background: var(---light-dark-blue);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(23rem,1rem));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h2{
+    color: var(--light-white);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.footer .box-container .box h3 {
+    color: var(--light-white);
+    font-size: 1.8rem;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: var(--light-white);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 1rem .8rem
+}
+
+.footer  .credit {
+    color: var(--light-white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-top: .1rem solid var(--light-white);
+    text-align: center;
+}
+
+
+
+/*footer section ends*/
+
 
 
 /*contact section ends*/
@@ -436,7 +491,7 @@ section {
 
     .header .navbar a{
         color: var(--light-white);
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         margin: 1.5rem;
         padding: 1rem;
@@ -453,12 +508,17 @@ section {
     }
 
     .home .content h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     .home .content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .icons .row .icons-container .icons h3{
+        font-size: 2rem;
+        padding: 1rem;
     }
 
     .about .content h3{
@@ -466,15 +526,15 @@ section {
     }
 
     .about .content h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .about .content p {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .services .row .content h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .services .row{
@@ -485,9 +545,15 @@ section {
        flex-flow: column-reverse;
     }
 
-    .services .row .content .image img {
+    .services .row .image img {
         width: 100%;
     }
-    
-
 }
+
+@media(max-width: 450px){
+    
+    html{
+        font-size: 50%;
+    }
+}
+
